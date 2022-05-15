@@ -1,20 +1,22 @@
-import Library from '../pages/Library.js'
-import General from '../pages/General.js'
-import News from '../pages/News.js'
-import Profile from '../pages/Profile.js'
-import Videos from '../pages/Videos.js'
-import Error from '../pages/Error.js'
-import Login from '../pages/Login.js'
+import React from 'react';
+import Library from '../pages/Library.jsx'
+import General from '../pages/General.jsx'
+import News from '../pages/News.jsx'
+import Profile from '../pages/Profile.jsx'
+import Videos from '../pages/Videos.jsx'
+import Error from '../pages/Error.jsx'
+import Login from '../pages/Login.jsx'
 
 export const privateRoutes = [
-    {path: '/', component: <General/>, replace: true},
-    {path: '/library', component: <About/>, replace: true},
-    {path: '/news', component: <Posts/>, replace: true},
-    {path: '/videos', component: <Videos/>, replace: true},
-    {path: '/profile', component: <Profile/>, replace: true},
-    {path: '/*', component: <Error/>, replace: true}
+    {path: '/', component: <General/>, name: 'Главная', replace: true},
+    {path: '/library', component: <Library/>, name: 'Библиотека', replace: true},
+    {path: '/news', component: <News/>, name: 'Новости', replace: true},
+    {path: '/videos', component: <Videos/>, name: 'Видео', replace: true},
+    {path: '/profile', component: <Profile/>, name: 'Профиль', replace: true},
+    {path: '/*', component: <Error/>, name: 'Ошибка', replace: true}
 ]
 
 export const publicRoutes = [
-    {path: '/login', component: <Login/>, replace: true}
+    {path: '/login', component: <Login/>, name: 'Войти', replace: true},
+    {path: '/*', component: <Error/>, name: 'Ошибка', replace: true}
 ]

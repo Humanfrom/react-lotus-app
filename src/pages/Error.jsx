@@ -2,7 +2,9 @@ import React from 'react';
 
 const Error = () => {
   return (
-    <div></div>
+    <div>
+      <h1>Ошибка. Такой страницы не существует</h1>
+    </div>
   );
 }
 
