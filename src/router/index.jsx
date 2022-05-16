@@ -9,9 +9,9 @@ import Login from '../pages/Login.jsx'
 
 export const privateRoutes = [
     {path: '/', component: <General/>, name: 'Главная', replace: true},
+    {path: '/videos', component: <Videos/>, name: 'Видео', replace: true},
     {path: '/library', component: <Library/>, name: 'Библиотека', replace: true},
     {path: '/news', component: <News/>, name: 'Новости', replace: true},
-    {path: '/videos', component: <Videos/>, name: 'Видео', replace: true},
     {path: '/profile', component: <Profile/>, name: 'Профиль', replace: true},
     {path: '/*', component: <Error/>, name: 'Ошибка', replace: true}
 ]
